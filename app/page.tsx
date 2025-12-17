@@ -34,6 +34,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            poster="/hero-video-poster.jpg"
             className="hidden md:block h-full w-full object-cover"
           >
             <source src="/hero-video.mp4" type="video/mp4" />
@@ -44,6 +45,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            poster="/hero-video-mobil-poster.jpg"
             className="block md:hidden h-full w-full object-cover"
           >
             <source src="/hero-video-mobil.mp4" type="video/mp4" />

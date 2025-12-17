@@ -28,16 +28,27 @@ export default function Home() {
       <section className="relative overflow-hidden border-b border-border/40 -mt-16 pt-16">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
-          {/* Hero Video */}
+          {/* Desktop Video */}
           <video
             autoPlay
             loop
             muted
             playsInline
             poster="/hero-video-poster.jpg"
-            className="h-full w-full object-cover"
+            className="hidden md:block h-full w-full object-cover"
           >
             <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
+          {/* Mobile Video - optimized */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/hero-video-poster.jpg"
+            className="block md:hidden h-full w-full object-cover"
+          >
+            <source src="/hero-video-mobil.mp4" type="video/mp4" />
           </video>
           {/* Dark Overlay for text readability */}
           <div className="absolute inset-0 bg-black/60" />
